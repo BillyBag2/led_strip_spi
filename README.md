@@ -1,6 +1,22 @@
 # led_strip_spi example
 
-Original README.md
+Modified by BillyBag2 for ESP32-P4 boards.
+
+## Notes
+
+* SPI2_HOST (HSPI) and SPI3_HOST (VSPI) are functionally the same.
+* GPIO46, GPIO47 are not the correct voltage to work with SK9822.
+
+## TODO
+
+* [x] Configure in main.c for SPI3_HOST, GPIO1 (DATA), GPIO2 (CLOCK).
+* [x] Test on JC-ESP32P4-m3-DEV board with two SK9822 LEDs.
+* [ ] Complete setup for the host board. (RAM, flash size, etc)
+* [ ] Add menuconfig option to select SPI2_HOST or SPI3_HOST.
+* [ ] Add menuconfig options to select GPIO pins for DATA and CLOCK.
+* [ ] Add menuconfig option to select frequency of SPI clock.
+
+Original README.md ...
 
 ## What the example does
 

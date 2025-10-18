@@ -132,6 +132,11 @@ void test(void *pvParameters)
     strip.clk_div = SPI_10MHz_DIV;
 #endif
 
+    strip.mosi_io_num = 1;
+    strip.sclk_io_num = 2;
+    strip.host_device = SPI3_HOST;
+    strip.clock_speed_hz = 8*1000*1000; // start 8–10 MHz, then raise
+
     ESP_LOGI(TAG, "Initializing LED strip");
     ESP_ERROR_CHECK(led_strip_spi_init(&strip));
 
