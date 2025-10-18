@@ -12,5 +12,8 @@
     "--compile-commands-dir=c:\\Users\\bagsh\\OneDrive\\Documents\\github\\led_strip_spi\\build"
   ],
   "idf.portWin": "COM4",
-  "idf.flashType": "UART"
+  "idf.flashType": "UART",
+  "cSpell.words": [
+    "menuconfig"
+  ]
 }
